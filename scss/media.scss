@@ -6,10 +6,13 @@
   }
 
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) {
 
   html {
     font-size: 9px;
+  }  
+  .stats__stat {
+    width: 50%;
   }
 
 }
@@ -82,6 +85,9 @@
   .hero {
     padding: 20rem 0 5rem;
     height: 100vh;
+  }
+  .stats__stat {
+    width: 100%;
   }
 
 }

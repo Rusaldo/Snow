@@ -20,6 +20,19 @@ p {
   width: 95%;
   margin: 0 auto;
 }
+.section-heading {
+  font-size: 3.8rem;
+  font-family: "Playfair Display", serif;
+  color: #171717;
+  letter-spacing: 0.95px;
+  text-align: center;
+}
+.section-descr {
+  color: #5f5f5f;
+  text-align: center;
+  max-width: 750px;
+  margin: 3.5rem auto;
+}
 /*------------HEADER------------*/
 .header {
   color: $white;
@@ -168,5 +181,54 @@ p {
     transform: rotate(45deg);
     border: solid #aaa;
     border-width: 0 2px 2px 0;
+  }
+}
+/*-------------ABOUT--------------*/
+.about {
+  padding: 9.5rem 0;
+  text-align: center;
+}
+/*-------------STATS--------------*/
+.stats {
+  background: url(../img/stats-bg.png) no-repeat center center / cover;
+  color: $white;
+  padding: 7rem 0 12rem;
+}
+.stats__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.stats__stat {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  justify-content: center;
+}
+.stat__icon {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background: url(../img/stats-sprite.png);
+  background-position: 0 0;
+  margin-right: 2.5rem;
+}
+.stat__icon-2 {
+  background-position: 100px 0;
+}
+.stat__icon-3 {
+  background-position: 50px 0;
+}
+.stat__icon-4 {
+  background-position: -1px 50px;
+}
+.stat__text {
+  width: 170px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  span {
+    font-size: 1.8rem;
+    display: block;
   }
 }
