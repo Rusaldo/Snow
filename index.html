@@ -5,12 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Snow</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,700i|Work+Sans:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/media.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-  <script src="js/index.js"></script>  
+  <header class="header">
+    <div class="wrapper">
+      <h1 class="logo header__logo"><a class="logo__link" href="javascript:window.location.reload(true)">Snow</a></h1>
+      <input class="header__checkbox" type="checkbox" id="header__checkbox">
+      <nav class="menu header__menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+          <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+          <li class="menu__item"><a class="menu__link" href="#projects">Portfolio</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
+        </ul>
+        <label class="menu__toggle" for="header__checkbox">
+          <span class="toggle__line toggle__line-1"></span>
+          <span class="toggle__line toggle__line-2"></span>
+          <span class="toggle__line toggle__line-3"></span>
+          <span class="toggle__line toggle__line-4"></span>
+        </label>
+      </nav>
+    </div>
+  </header>
+  <section class="hero" id="hero">
+    <div class="wrapper">
+      <h3 class="hero__sub-heading">new branding agency</h3>
+      <h2 class="hero__heading">We are about to change the way <br> <span>you publish on web</span></h2>
+      <a class="hero__arrow-down arrow-down" href="#about">
+        <span></span>
+      </a>
+    </div>
+  </section>
+  <script src="js/index.js"></script>
 </body>
 </html>
