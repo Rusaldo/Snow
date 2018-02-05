@@ -10,8 +10,11 @@
 
   html {
     font-size: 9px;
-  }  
+  }
   .stats__stat {
+    width: 50%;
+  }
+  .gallery__item {
     width: 50%;
   }
 
@@ -87,6 +90,9 @@
     height: 100vh;
   }
   .stats__stat {
+    width: 100%;
+  }
+  .gallery__item {
     width: 100%;
   }
 

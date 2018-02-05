@@ -12,6 +12,9 @@
   .stats__stat {
     width: 50%;
   }
+  .gallery__item {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -102,6 +105,9 @@
     height: 100vh;
   }
   .stats__stat {
+    width: 100%;
+  }
+  .gallery__item {
     width: 100%;
   }
 }
