@@ -312,3 +312,61 @@ p {
   font-size: 1.8rem;
   display: block;
 }
+
+/*------------PROJECTS------------*/
+.projects {
+  padding: 9rem 0 10rem;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.gallery__item {
+  background: #ccc;
+  width: 33.33333%;
+  height: 250px;
+  color: #fff;
+}
+
+.gallery__item:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+.gallery__item:hover:after {
+  opacity: 1;
+}
+
+.gallery__item:nth-child(odd) {
+  background: #aaa;
+}
+
+.gallery__heading {
+  -webkit-transform: translate(-50%, 10px);
+  -ms-transform: translate(-50%, 10px);
+  transform: translate(-50%, 10px);
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+}
+
+.gallery__sub-heading {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+}
