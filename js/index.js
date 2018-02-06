@@ -1,11 +1,18 @@
 $(document).ready(function() {
 
+  // PRELOADER
+  $(window).on('load', function () {
+    setTimeout(function() {
+      $(".preloader-bg").fadeOut();
+    }, 1000);
+  });
+
   // MENU TOGGLE
   document.querySelector(".menu__toggle").onclick = function() {
     document.querySelector(".menu__list").classList.toggle("active");
     document.querySelector(".menu__toggle").classList.toggle("active");
   };
-  
+
   $(".menu__link").click(function() {
     $(".menu__list").removeClass("active");
     $(".menu__toggle").removeClass("active");
