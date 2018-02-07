@@ -4,7 +4,7 @@ $(document).ready(function() {
   $(window).on("load", function () {
     setTimeout(function() {
       $(".preloader-bg").fadeOut();
-    }, 000);
+    }, 1000);
   });
 
   // SLICK SLIDER INITIALIZATION
