@@ -1,21 +1,21 @@
 $(document).ready(function() {
 
   // PRELOADER
-  $(window).on('load', function () {
+  $(window).on("load", function () {
     setTimeout(function() {
       $(".preloader-bg").fadeOut();
-    }, 1000);
+    }, 000);
   });
 
   // SLICK SLIDER INITIALIZATION
-  $('.reviews__slider').slick({
+  $(".reviews__slider").slick({
     autoplay: true,
     autoplaySpeed: 7000,
     arrows: false,
     dots: true
   });
 
-  $('.clients__slider').slick({
+  $(".clients__slider").slick({
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -33,6 +33,31 @@ $(document).ready(function() {
     {
       breakpoint: 480,
       settings: "unslick"
+    }
+  ]
+  });
+
+  $(".blog__slider").slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true,
+    autoplaySpeed: 7000,
+    arrows: false,
+    dots: true,
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
     }
   ]
   });
