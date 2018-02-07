@@ -21,6 +21,12 @@
   html {
     font-size: 9px;
   }
+  .reviews {
+    height: 550px;
+  }
+  .reviews__review {
+    padding: 0 1%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -109,5 +115,21 @@
   }
   .gallery__item {
     width: 100%;
+  }
+  .clients__slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .clients__client {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }

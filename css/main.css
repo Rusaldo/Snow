@@ -251,7 +251,7 @@ p {
 
 /*-------------STATS--------------*/
 .stats {
-  background: url(../img/stats-bg.png) no-repeat center center/cover;
+  background: #1e1e1e url(../img/stats-bg.png) no-repeat center center/cover;
   color: #fff;
   padding: 7rem 0 12rem;
 }
@@ -423,6 +423,90 @@ p {
   -o-transition: transform .5s .3s, opacity .4s .3s;
   transition: transform .5s .3s, opacity .4s .3s;
   transition: transform .5s .3s, opacity .4s .3s, -webkit-transform .5s .3s;
+}
+
+/*-------------REVIEWS-------------*/
+.reviews {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  background: #1e1e1e url(../img/reviews-bg.png) center center/cover no-repeat;
+}
+
+.reviews__review {
+  padding: 0 3%;
+  text-align: center;
+  outline: none;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.review__quote {
+  font-size: 2.4rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0 0 3.5rem;
+}
+
+.review__author {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.reviews__slider .slick-dots {
+  bottom: -110px;
+}
+
+.reviews__slider .slick-dots button {
+  width: 6px;
+  height: 6px;
+  background-color: #5b5b5b;
+  border-radius: 50%;
+}
+
+.reviews__slider .slick-dots button:hover {
+  background-color: #fff;
+}
+
+.reviews__slider .slick-dots button:before {
+  content: '';
+}
+
+.reviews__slider .slick-dots li.slick-active button {
+  background-color: #fff;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  -o-transition: transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+/*-------------CLIENTS------------*/
+.clients {
+  padding: 7rem 0;
+}
+
+.clients__client {
+  outline: none;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.clients__logo {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 /*------------PRELOADER------------*/

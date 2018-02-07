@@ -7,11 +7,41 @@ $(document).ready(function() {
     }, 1000);
   });
 
+  // SLICK SLIDER INITIALIZATION
+  $('.reviews__slider').slick({
+    autoplay: true,
+    autoplaySpeed: 7000,
+    arrows: false,
+    dots: true
+  });
+
+  $('.clients__slider').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: "unslick"
+    }
+  ]
+  });
+
   // MENU TOGGLE
-  document.querySelector(".menu__toggle").onclick = function() {
-    document.querySelector(".menu__list").classList.toggle("active");
-    document.querySelector(".menu__toggle").classList.toggle("active");
-  };
+  $(".menu__toggle").click(function() {
+    $(".menu__list").toggleClass("active");
+    $(".menu__toggle").toggleClass("active");
+  });
 
   $(".menu__link").click(function() {
     $(".menu__list").removeClass("active");
@@ -19,14 +49,11 @@ $(document).ready(function() {
   });
 
   // HEADER FIX ON SCROLL
-  var header = document.getElementById("header");
-  var hero = document.getElementById("hero");
-
   window.onscroll = function() {
     if (window.pageYOffset >= (window.getComputedStyle(hero, null).height).replace(/\D/g,'') -20) {
-      header.classList.add("fixed");
+      $("header").addClass("fixed");
     } else {
-      header.classList.remove("fixed");
+      $("header").removeClass("fixed");
     }
   };
 
